@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>My First Webpage</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbarWrapper">
+            <nav class="navbar">
+                <h3>Navbar</h3>
+                <div class="navbarButtons">
+                    <div><a href="#aboutMe_section">About me</a></div>
+                    <div><a href="#myHobbies_section">My hobbies</a></div>
+                    <div><a href="#favWebs_section">My favourite websites</a></div>
+                    <div><a href="#image_section">Image + Links</a></div>
+                    <div><a href="#button_section">Clickable button</a></div>
+                    <div><a href="#table_section">Table</a></div>
+                    <div><a href="#emojis_section">Emojis</a></div>
+                    <div><a href="#form_section">Form</a></div>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="head">
+                <h1>Abay Beisenbek</h1>
+                <h2>IT-2408</h2>
+                <h3>The second year student of Astana IT University</h3>
+            </div>
+            <section class="section" id="aboutMe_section">
+                <h3>About me</h3>
+                <div class="description">
+                    My name is Abay, I am from Kazakhstan,
+                    and my favourite programming languages are HTML and CSS!
+                </div>
+            </section>
+            <section class="section" id="myHobbies_section">
+                <h3>My hobbies</h3>
+                <div class="sectionContent">
+                    <ol class="list">
+                        <li>Chess</li>
+                        <li>Drawing</li>
+                        <li>Cooking</li>
+                        <li>Hobbyhorsing</li>
+                        <li>Coding</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section" id="favWebs_section">
+                <h3>My favourite websites</h3>
+                <div class="sectionContent">
+                    <ul class="list">
+                        <li>Youtube</li>
+                        <li>Moodle</li>
+                        <li>Telegram</li>
+                        <li>TikTok</li>
+                        <li>Spotify</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="image_section">
+                <h3>Image + Links</h3>
+                <img src="public/photo_5330168437584035389_x.jfif" alt="tiger" class="image">
+                <div class="links">
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=SUkdxgeDNlluWOgV" target="_blank">
+                        BUY MONEY FOR FREE!!!
+                    </a>
+                    <a href="https://google.com" target="_blank">
+                        Google
+                    </a>
+                </div>
+            </section>
+            <section class="section" id="button_section">
+                <h3>Clickable button</h3>
+                <button onclick="alert('You have clicked on me!')">Click Me</button>
+            </section>
+            <section class="section" id="table_section">
+                <h3>Table</h3>
+                <div class="sectionContent">
+                    <table>
+                        <caption>Weekly Class Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Computer Graphics Fundamentals</td>
+                                <td>Monday</td>
+                                <td>13:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td>Analytic Geometry</td>
+                                <td>Tuesday</td>
+                                <td>16:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Graphics Fundamentals</td>
+                                <td>Wednesday</td>
+                                <td>14:00 - 16:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="section" id="emojis_section">
+                <h3>Emojis</h3>
+                <p>I feel so good today &#128516;. It's just &#10024; wonderful &#127881;</p>
+            </section>
+            <section class="section" id="form_section">
+                <h3>Form</h3>
+                <form>
+                    <div class="formInput">
+                        <label for="inputName">Please, input your name:</label>
+                        <input placeholder="name" id="inputName" type="text">
+                    </div>
+                    <div class="formInput">
+                        <label for="inputEmail">Please, input your email:</label>
+                        <input placeholder="email@example.com" id="inputEmail" type="email">
+                    </div>
+                    <div class="formInput">
+                        <label for="inputColor">Please, choose your favorite color:</label>
+                        <input id="inputColor" type="color">
+                    </div>
+                    <button type="button" onclick="alert(
+                        'You\'ve submitted the following data:\n'
+                        + '\nName: '+document.getElementById('inputName').value
+                        + '\nEmail: '+document.getElementById('inputEmail').value
+                        + '\nColor: '+document.getElementById('inputColor').value
+                    )">
+                        submit
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./public/favicon.jpg">
     <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            background-color: #fdfdfd;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: "Trebuchet MS", sans-serif;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <title>My First Webpage</title>
 </head>
@@ -13,31 +23,31 @@
             <nav class="navbar">
                 <h3>Navbar</h3>
                 <div class="navbarButtons">
-                    <div><a href="#aboutMe_section">About me</a></div>
-                    <div><a href="#myHobbies_section">My hobbies</a></div>
-                    <div><a href="#favWebs_section">My favourite websites</a></div>
-                    <div><a href="#image_section">Image + Links</a></div>
-                    <div><a href="#button_section">Clickable button</a></div>
-                    <div><a href="#table_section">Table</a></div>
-                    <div><a href="#emojis_section">Emojis</a></div>
-                    <div><a href="#form_section">Form</a></div>
+                    <a href="#aboutMe_section">About me</a>
+                    <a href="#myHobbies_section">My hobbies</a>
+                    <a href="#favWebs_section">My favourite websites</a>
+                    <a href="#image_section">Image + Links</a>
+                    <a href="#button_section">Clickable button</a>
+                    <a href="#table_section">Table</a>
+                    <a href="#emojis_section">Emojis</a>
+                    <a href="#form_section">Form</a>
                 </div>
             </nav>
         </div>
         <div class="content">
             <div class="head">
-                <h1>Abay Beisenbek</h1>
+                <h1 id="main-heading">Abay Beisenbek</h1>
                 <h2>IT-2408</h2>
                 <h3>The second year student of Astana IT University</h3>
             </div>
-            <section class="section" id="aboutMe_section">
+            <section id="aboutMe_section">
                 <h3>About me</h3>
-                <div class="description">
+                <div class="description" style="color: blue;">
                     My name is Abay, I am from Kazakhstan,
                     and my favourite programming languages are HTML and CSS!
                 </div>
             </section>
-            <section class="section" id="myHobbies_section">
+            <section id="myHobbies_section">
                 <h3>My hobbies</h3>
                 <div class="sectionContent">
                     <ol class="list">
@@ -45,11 +55,12 @@
                         <li>Drawing</li>
                         <li>Cooking</li>
                         <li>Hobbyhorsing</li>
-                        <li>Coding</li>
+                        <p class="highlight">This text is very important!</p>
+                        <li class="highlight">Coding</li>
                     </ol>
                 </div>
             </section>
-            <section class="section" id="favWebs_section">
+            <section id="favWebs_section">
                 <h3>My favourite websites</h3>
                 <div class="sectionContent">
                     <ul class="list">
@@ -61,7 +72,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section" id="image_section">
+            <section id="image_section">
                 <h3>Image + Links</h3>
                 <img src="public/photo_5330168437584035389_x.jfif" alt="tiger" class="image">
                 <div class="links">
@@ -73,11 +84,11 @@
                     </a>
                 </div>
             </section>
-            <section class="section" id="button_section">
+            <section id="button_section">
                 <h3>Clickable button</h3>
                 <button onclick="alert('You have clicked on me!')">Click Me</button>
             </section>
-            <section class="section" id="table_section">
+            <section id="table_section">
                 <h3>Table</h3>
                 <div class="sectionContent">
                     <table>
@@ -109,11 +120,11 @@
                     </table>
                 </div>
             </section>
-            <section class="section" id="emojis_section">
+            <section id="emojis_section">
                 <h3>Emojis</h3>
                 <p>I feel so good today &#128516;. It's just &#10024; wonderful &#127881;</p>
             </section>
-            <section class="section" id="form_section">
+            <section id="form_section">
                 <h3>Form</h3>
                 <form>
                     <div class="formInput">
@@ -138,7 +149,23 @@
                     </button>
                 </form>
             </section>
+            <section>
+                <h3>Positioning</h3>
+                <div class="staticBox">Static Box</div>
+                <div class="relativeBox">Relative Box</div>
+                <div class="absoluteBox">Absolute Box</div>
+            </section>
+            <section>
+                <h3>Float and Clear</h3>
+                <div class="floatContainer">
+                    <div class="box left">Left Box</div>
+                    <div class="box right">Right Box</div>
+                </div>
+            </section>
         </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Abay Beisenbek</p>
     </div>
 </body>
 </html>

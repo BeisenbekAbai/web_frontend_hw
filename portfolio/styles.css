@@ -1,0 +1,80 @@
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 150%; }
+h3{
+    font-size: 25px;
+}
+main {
+    margin-top: 6rem;
+}
+button{
+    width: 10rem;
+    transition-property: background-color, color;
+    transition-duration: 100ms;
+    color: #575757;
+    border: .1rem solid;
+    border-color: rgb(168, 168, 168);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+}
+button:hover{
+    background-color: #efefef;
+    color: black;
+}
+footer {
+    width: 100%;
+    background-color: #113946;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#cards_section{
+    background-color: #fbfbfb;
+}
+.cards{
+    columns: 3;
+}
+.card{
+    transform: scale(1);
+    transition-duration: 100ms;
+    transition-property: box-shadow, transform;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px .2rem 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    break-inside: avoid;
+}
+.card:hover{
+    box-shadow: 0px 0px .5rem 0px rgba(34, 60, 80, 0.2);
+    transform: scale(1.02);
+}
+.cardText{
+    color: #828282;
+    font-size: .8rem;
+}
+.cardImage{
+    border-radius: .5rem;
+}
+.cardImage_{
+    border-radius: .5rem;
+    width: 100%;
+    background-color: #575757;
+    height: 12rem;
+}
+
+@media (max-width: 576px) { html{ font-size: 12px; } } 
+@media (min-width: 577px) and (max-width: 991px) { html{ font-size: 15px; } }

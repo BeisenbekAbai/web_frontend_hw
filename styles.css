@@ -1,0 +1,66 @@
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+body {
+    padding: 4rem 0rem 30rem 0rem;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 150%; }
+h3{
+    font-size: 25px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+main{
+    margin-top: 1rem;
+    padding: 0rem 4rem;
+}
+section{
+    margin-top: 2rem;
+}
+.typo p{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.boxes{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "col1" "col2" "col3";
+    gap: 1rem;
+}
+.box{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    break-inside: avoid;
+}
+.bootstrap-box {
+    height: 6rem;
+}
+
+@media (max-width: 576px) { 
+    html{ font-size: 12px; }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+@media (min-width: 577px) and (max-width: 991px) { 
+    html{ font-size: 15px; }
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "col1" "col2";
+    }
+}
